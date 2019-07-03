@@ -1,0 +1,8 @@
+vi:
+  static_pages:
+    help:
+      help: "Giup do"
+    home:
+      home: "Trang chu"
+    about:
+      about: "Thong tin"
