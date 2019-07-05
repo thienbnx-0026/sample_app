@@ -4,6 +4,8 @@ vi:
   in: "Đăng nhập"
   out: "Đăng xuất"
   sample: "Ứng dụng mẫu"
+  Ruby on Rails Tutorial: "Ruby on Rails Tutorial"
+  Michael Hartl: "Michael Hartl"
   title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
   ruby: "Hướng dẫn về Ruby on Rails"
   home: "Trang chủ"
@@ -39,6 +41,5 @@ vi:
     new:
   sign_up: "Đăng ký"
   new_content: "Trang đăng kí cho người dùng mới"
-
-  the: ""
+  the: "Cuốn"
   by: "bởi"
