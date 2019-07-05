@@ -13,5 +13,4 @@ class ApplicationController < ActionController::Base
     I18n.locale = I18n.available_locales.include?(locale) ?
       locale : I18n.default_locale
   end
-
 end
