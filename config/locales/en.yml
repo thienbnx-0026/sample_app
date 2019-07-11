@@ -11,6 +11,7 @@ en:
   account: "Account"
   profile: "Profile"
   settings: "Settings"
+  sure: "You sure?"
   Ruby on Rails Tutorial: "Ruby on Rails Tutorial"
   RoRT: "Ruby on Rails Tutorial"
   remember: "Remember me on this computer"
@@ -29,6 +30,7 @@ en:
   confirmation: "Confirmation"
   create: "Create my account"
   contact: "Contact"
+  delete: "delete"
   new: "News"
   static_pages:
     home:
@@ -56,5 +58,22 @@ en:
       contact_ruby: "Contact the Ruby on rails tutorial about the sample app at the"
   users:
     new:
+    edit:
+      edit: "Edit users"
+      update: "Update your Profile"
+      save: "Save changes"
+      change: "change"
+    update:
+      updated: "Profile Updated"
+    logged_in_user:
+      please_login: "Please Login"
+    index:
+      users: "All users"
+    destroy:
+      deleted: "User deleted"
+      danger: "You cant do it."
+      notice: "Not deleted"
+    load_user:
+      user_not_found: "user not found"
   sign_up: "Sign Up"
   new_content: "This will be a signup page for new users"

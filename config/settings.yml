@@ -2,3 +2,5 @@ maximum_length_name: 50
 maximum_length_email: 255
 minimum_length_pass: 6
 sessions_value: "1"
+paginate_user: 25
+option: 80
