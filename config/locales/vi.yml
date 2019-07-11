@@ -8,6 +8,7 @@ vi:
   profile: "Trang ca nhan"
   settings: "Cai dat"
   account: "Tai khoan"
+  sure: "You sure?"
   Ruby on Rails Tutorial: "Ruby on Rails Tutorial"
   RoRT: "Ruby on Rails Tutorial"
   remember: "Ghi nho dang nhap"
@@ -24,6 +25,7 @@ vi:
   signupnow: "Đăng ký ngay!"
   home: "Trang chủ"
   help: "Trợ giúp"
+  delete: "Xoa"
   about: "Giới thiệu"
   contact: "Liên hệ"
   new: "Tin tức"
@@ -53,6 +55,23 @@ vi:
       contact_ruby: "Liên hệ với hướng dẫn của Ruby on rails về ứng dụng mẫu tại"
   users:
     new:
+    edit:
+      edit: "Chinh sua thong tin"
+      update: "Cap nhat thong tin"
+      save: "Luu"
+      change: "change"
+    update:
+      updated: "Da cap nhat trang ca nhan"
+    logged_in_user:
+      please_login: "Vui long dang nhap"
+    index:
+      users: "Tat ca tai khoan"
+    destroy:
+      deleted: "User deleted"
+      danger: "Ban khong the xoa"
+      notice: "Khong thanh cong"
+    load_user:
+      user_not_found: "Khong tim thay nguoi dung"
   sign_up: "Đăng ký"
   new_content: "Trang đăng kí cho người dùng mới"
   the: "Cuốn"
