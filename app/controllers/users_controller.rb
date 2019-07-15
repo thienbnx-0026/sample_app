@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: %i(new create show)
+  before_action :logged_in_user, except: %i(new create)
   before_action :load_user, except: %i(new create index)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
@@ -8,7 +8,10 @@ class UsersController < ApplicationController
     @users = User.page(params[:page]).per Settings.paginate_user
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.create_desc.page(params[:page])
+      .per_page Settings.paginate_post
+  end
 
   def new
     @user = User.new
@@ -19,7 +22,7 @@ class UsersController < ApplicationController
 
     if @user.save
       @user.send_activation_email
-      flash[:info] = t ".email"
+      flash.now[:info] = t ".email"
       redirect_to root_url
     else
       render :new
@@ -73,7 +76,7 @@ class UsersController < ApplicationController
   def load_user
     @user = User.find_by id: params[:id]
     return if @user
-    flash[:warrning] = t ".user_not_found"
+    flash.now[:warrning] = t ".user_not_found"
     redirect_to root_path
   end
 end
