@@ -12,4 +12,6 @@ Rails.application.routes.draw do
         get "(page/:page)", action: :index, on: :collection, as: ''
     end
     resources :users, concerns: :paginatable
+    resources :account_activations, only: :edit
+
 end
