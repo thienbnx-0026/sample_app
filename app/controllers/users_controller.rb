@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
   def show
     @microposts = @user.microposts.create_desc.page(params[:page])
-      .per_page Settings.paginate_post
+                       .per_page Settings.paginate_post
   end
 
   def new

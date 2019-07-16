@@ -8,8 +8,7 @@ class Micropost < ApplicationRecord
   validate  :picture_size
 
   def picture_size
-    if picture.size > Settings.picture_size.megabytes
-      errors.add(:picture, t("picture_size"))
-    end
+    errors.add(:picture, I18n.t("picture_size")) if picture.size >
+                                                    Settings.picture_size.megabytes
   end
 end

@@ -13,8 +13,14 @@ Rails.application.routes.draw do
     concern :paginatable do
         get "(page/:page)", action: :index, on: :collection, as: ""
     end
-    resources :users, concerns: :paginatable
+    resources :users do
+        member do
+          get "followers/new", to: "followers#new"
+          get "following/new", to: "following#new"
+        end
+    end
     resources :account_activations, only: :edit
-    resources :password_resets, only: [:new, :create, :edit, :update]
-    resources :microposts, only: [:create, :destroy]
+    resources :password_resets, except: %i(index show destroy)
+    resources :microposts, only: %i(create destroy)
+    resources :relationships, only: %i(create destroy)
 end

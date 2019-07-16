@@ -11,6 +11,10 @@ vi:
   microposts: "Microposts"
   view_profile: "Trang ca nhan"
   micropost_feed: "Micropost Feed"
+  following: "Dang theo doi"
+  follow: "Theo doi"
+  unfollow: "Huy theo doi"
+  followers: "Nguoi theo doi"
   micropost_deleted: "Da xoa bai dang"
   post: "Dang"
   account: "Tai khoan"
@@ -55,6 +59,7 @@ vi:
   delete: "Xoa"
   about: "Giới thiệu"
   contact: "Liên hệ"
+  user_not_found: "Khong tim thay nguoi dung"
   new: "Tin tức"
   static_pages:
     home:
