@@ -4,3 +4,8 @@ minimum_length_pass: 6
 sessions_value: "1"
 paginate_user: 25
 option: 80
+content_value: 140
+microspost_size: 50
+paginate_post: 30
+picture_size: 5
+limit_size: 400
