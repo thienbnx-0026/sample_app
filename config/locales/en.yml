@@ -11,6 +11,10 @@ en:
   posted: "Posted"
   microposts: "Microposts"
   ago: "ago"
+  following: "following"
+  follow: "Follow"
+  unfollow: "Unfollow"
+  followers: "Followers"
   please_log_in: "Please log in"
   micropost_created: "Micropost created!"
   view_profile: "My profile"
@@ -58,6 +62,7 @@ en:
   create: "Create my account"
   contact: "Contact"
   delete: "delete"
+  user_not_found: "user not found"
   new: "News"
   static_pages:
     home:
